@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사</title>
+</head>
+
+<body>
+    <form action="http://192.168.0.226:5500/Survey01.html" method="get">
+        <fieldset>
+            <legend>
+                <h1>개인 설문조사</h1>
+            </legend>
+            <h2>설문조사에 성실하게 임해주시기 바랍니다.</h2>
+        </fieldset>
+
+
+        <fieldset>
+            
+            <ul>
+                <legend>
+                    <h2>설문조사 참여자 이름작성</h2>
+                </legend>
+                <li><label for="name">이름</label>
+                    <input type="text" name="name">
+                </li>
+                <li><label for="gender">성별 :</label>
+                    <input type="radio" name="gender" value="man">남자
+                    <input type="radio" name="gender" value="girl">여자
+                </li>
+            </ul>
+
+            <hr class="one">
+            <h3>당신의 나이는 몇살인가요?</h3>
+            <ul>
+                <li><input type="radio" name="age" value="ten">10대</li><br />
+                <li><input type="radio" name="age" value="twenty">20대</li><br />
+                <li><input type="radio" name="age" value="thirty">30대</li><br />
+                <li><input type="radio" name="age" value="Over 40 years old">40대 이상</li><br />
+            </ul>
+            <hr class="one">
+            <h3>당신의 키는 몇cm인가요?</h3>
+            <ul>
+                <li><input type="radio" name="height" value="below 169cm">169cm이하</li><br />
+                <li><input type="radio" name="height" value="170cm~179cm">170~179cm</li><br />
+                <li><input type="radio" name="height" value="180cm~185cm">180~185cm</li><br />
+                <li><input type="radio" name="height" value="Over 186cm">186cm이상</li><br />
+            </ul>
+            <hr class="one">
+            <h3>당신의 몸무게는 몇kg인가요?</h3>
+            <ul>
+                <li><input type="radio" name="weight" value="below 60kg">60kg이하</li><br />
+                <li><input type="radio" name="weight" value="61kg~70kg">61~70kg</li><br />
+                <li><input type="radio" name="weight" value="71kg~80kg">71~80kg</li><br />
+                <li><input type="radio" name="weight" value="Over 81kg">81kg이상</li><br />
+            </ul>
+            <hr class="one">
+            <h3>당신의 사는곳은 어디 인가요?</h3>
+            <ul>
+                <li><input type="radio" name="location" value="gyeonggi-do">경기도</li><br />
+                <li><input type="radio" name="location" value="seoul">서울특별시</li><br />
+                <li><input type="radio" name="location" value="Incheon">인천광역시</li><br />
+                <li><input type="radio" name="location" value="input">
+                    <label for="location">직접입력</label>
+                    <input type="text" name="location">
+                </li><br />
+            </ul>
+            <hr class="one">
+            <h3>당신의 취미는 무엇인가요?(중복가능)</h3>
+            <ul>
+                <li><input type="checkbox" name="hobby" value="work out">운동</li><br />
+                <li><input type="checkbox" name="hobby" value="game">게임</li><br />
+                <li><input type="checkbox" name="hobby" value="reading">독서</li><br />
+                <li><input type="checkbox" name="hobby" value="input">직접입력</li>
+                <input type="text" name="location"><br />
+            </ul>
+            <hr class="one">
+            <h3>당신의 좋아하는음식은 무엇인가요?(중복가능)</h3>
+            <ul>
+                <li><input type="checkbox" name="food" value="Korean">한식</li><br />
+                <li><input type="checkbox" name="food" value="western">양식</li><br />
+                <li><input type="checkbox" name="food" value="Japanese">일식</li><br />
+                <li><input type="checkbox" name="food" value="Chinese">중식</li><br />
+                <li><input type="checkbox" name="food" value="input">직접입력</li>
+                <input type="text" name="location"><br />
+            </ul>
+            <hr class="one">
+            <h3>당신이 좋아하는 영화 장르는 무엇인가요?(중복가능)</h3>
+            <ul>
+                <li><input type="checkbox" name="movie" value="thriller">스릴러</li><br />
+                <li><input type="checkbox" name="movie" value="drama">드라마</li><br />
+                <li><input type="checkbox" name="movie" value="action">액션</li><br />
+                <li><input type="checkbox" name="movie" value="input">직접입력</li>
+                <input type="text" name="location">
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h3>자신을 더 알리고 싶은점이 있다면 자유롭게 작성해주세요.(200자 내외)</h3>
+            </legend>
+            <input type="text" value="preeInput" size=260 maxlength=200>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>제출하기</h2>
+            </legend>
+            <input type="submit" style="height: 50px;width: 200px;" />
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

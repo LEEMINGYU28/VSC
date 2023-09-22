@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rectangle {
+            width: 100px;
+            height: 100px;
+            background-color:  rebeccapurple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="btn">나를 눌러바</button>
+
+    <div class="rectangle" id="rotate"></div>
+    <script>
+        const btn = document.getElementById("btn");
+        // btn.addEventListener('click',()=> {
+        //     alert("버튼 클릭");
+        // }); 람다식처리 = 화살표 처리
+        function alertEvent() {
+            alert("버튼 클릭");
+        }
+        btn.addEventListener("click", alertEvent);
+        
+
+        let angle =0;
+        const rectangle = document.getElementById("rotate");
+        rectangle.addEventListener("click",() =>{
+            angle +=45;
+            // rectangle.style.transform="rotate(45deg)";
+            rectangle.style.transform= 'rotate(${angle}deg)';
+        });
+    </script>
+</body>
+
+</html>

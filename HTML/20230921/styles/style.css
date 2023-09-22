@@ -1,0 +1,36 @@
+#container {
+    width: 650px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+img{
+    width: 650px;
+    height: 500px;
+}
+#check {
+    border: 1px solid black;
+}
+
+h1 {
+    color: white;
+    background: black;
+
+    /* 제목이랑 다른 요소간의 마진 여백을 나타낸다 */
+    margin: 0;
+    /* 테두리와 제목 텍스트 사이의 패딩 여백 */
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    color: red;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}
